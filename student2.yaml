@@ -74,7 +74,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/students_students_body'
+              $ref: '#/components/schemas/students_body'
         required: true
       responses:
         "200":
@@ -115,14 +115,4 @@ components:
           type: integer
           description: Age of the student
           example: 20
-    students_students_body:
-      type: object
-      properties:
-        name:
-          type: string
-          description: Updated name of the student
-          example: John Doe
-        age:
-          type: integer
-          description: Updated age of the student
-          example: 21
+    
